@@ -115,7 +115,7 @@ function App() {
           </p>
         </section>
 
-        <section className="flex flex-col lg:flex-row gap-16 items-center">
+        <section className="flex pl-3 flex-col lg:flex-row gap-16 items-center">
           <div className="flex-1 space-y-12">
             <h2 className="text-3xl font-bold">Inside The Guide:</h2>
             <ul className="space-y-10">
