@@ -121,21 +121,34 @@ function App() {
             <ul className="space-y-10">
               {[
                 {
-                  icon: "⚡",
-                  title: "Lightning Fast Response",
-                  description:
-                    "30-minute emergency response anywhere in Lagos",
+                  icon: "📄",
+                  title: "Essential Car Documents",
+                  description: "Complete checklist of required documents for driving in Lagos",
+                },
+                {
+                  icon: "🔧",
+                  title: "Maintenance Schedule",
+                  description: "Key maintenance timelines to prevent breakdowns",
+                },
+                {
+                  icon: "🚨",
+                  title: "Emergency Kit Guide",
+                  description: "Must-have items for every Lagos driver",
                 },
                 {
                   icon: "🛡️",
-                  title: "Professional Service",
-                  description: "Vetted and trained emergency responders",
+                  title: "Safety Tips",
+                  description: "Essential safety practices for Lagos roads",
                 },
                 {
-                  icon: "🚗",
-                  title: "Complete Coverage",
-                  description:
-                    "From towing to fuel delivery, we've got you covered",
+                  icon: "🔍",
+                  title: "Basic Troubleshooting",
+                  description: "Common car issues and how to identify them",
+                },
+                {
+                  icon: "📱",
+                  title: "Emergency Contacts",
+                  description: "Important numbers every car owner should have",
                 },
               ].map((feature, index) => (
                 <li
@@ -220,7 +233,7 @@ function App() {
       <footer className="border-t border-white/10 mt-20">
         <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[#A89887]">
-            &copy; 2024 ResQ-X. All rights reserved.
+            &copy; {new Date().getFullYear()} ResQ-X. All rights reserved.
           </p>
           <nav className="flex gap-8">
             <a
