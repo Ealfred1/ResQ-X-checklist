@@ -23,7 +23,7 @@ function App() {
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', 'ResQX-Emergency-Guide.pdf');
+      link.setAttribute('download', 'ResQX-Checklist.pdf');
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
