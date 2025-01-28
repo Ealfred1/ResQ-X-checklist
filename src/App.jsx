@@ -18,7 +18,7 @@ function App() {
 
   const downloadPDF = async () => {
     try {
-      const response = await fetch('/guide.pdf');
+      const response = await fetch('/resqx checklist copy.pdf');
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement('a');
