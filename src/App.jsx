@@ -32,7 +32,7 @@ function App() {
       console.error('Failed to download PDF:', err);
       setError("Failed to download guide. Please try again.");
     }
-  };
+  }; 
 
   const sendToBrevo = async (email) => {
     const BREVO_API_KEY = import.meta.env.VITE_BREVO_API_KEY;
@@ -97,8 +97,12 @@ function App() {
         }`}
       >
         <div className="container mx-auto px-4 py-4">
-          <div className="text-2xl font-bold text-[#FF8500] hover:scale-105 transition-transform cursor-pointer">
-            ResQ-X
+        <div className="relative w-[120px] lg:w-[140px] h-[26.25px] mr-8">
+            <img
+              src={"/logo.png"}
+              alt="logo"
+              className="w-full h-full"
+            />
           </div>
         </div>
       </header>
@@ -110,8 +114,7 @@ function App() {
             <span className="text-[#FF8500]">Lagos</span> Again
           </h1>
           <p className="text-xl text-[#CCC8C4] max-w-2xl mx-auto leading-relaxed">
-            Download our free guide on emergency vehicle services and learn how
-            ResQ-X is revolutionizing roadside assistance.
+          Download our free guide on emergency vehicle services and learn how to take care of your vehicle, stay safe on the road, and handle unexpected situations with ease
           </p>
         </section>
 
@@ -127,7 +130,7 @@ function App() {
                 },
                 {
                   icon: "🔧",
-                  title: "Maintenance Schedule",
+                  title: "Maintenance Tips",
                   description: "Key maintenance timelines to prevent breakdowns",
                 },
                 {
@@ -140,15 +143,15 @@ function App() {
                   title: "Safety Tips",
                   description: "Essential safety practices for Lagos roads",
                 },
-                {
-                  icon: "🔍",
-                  title: "Basic Troubleshooting",
-                  description: "Common car issues and how to identify them",
-                },
+                // {
+                //   icon: "🔍",
+                //   title: "Basic Troubleshooting",
+                //   description: "Common car issues and how to identify them",
+                // },
                 {
                   icon: "📱",
                   title: "Emergency Contacts",
-                  description: "Important numbers every car owner should have",
+                  description: "Reach out to us in an emergency through —the platforms that we have in the checklist",
                 },
               ].map((feature, index) => (
                 <li
@@ -184,7 +187,7 @@ function App() {
                     Successfully Downloaded!
                   </h3>
                   <p className="text-[#A89887]">
-                    Check your downloads folder for the guide.
+                    Check your Downloads folder for the guide.
                   </p>
                 </div>
               ) : (
@@ -237,7 +240,7 @@ function App() {
           </p>
           <nav className="flex gap-8">
             <a
-              href="#"
+              href="https://resqx.com/privacy-policy"
               className="text-[#A89887] hover:text-[#FF8500] transition-colors"
             >
               Privacy Policy
@@ -249,7 +252,7 @@ function App() {
               Terms of Service
             </a>
             <a
-              href="#"
+              href="https://resqx.com/contact"
               className="text-[#A89887] hover:text-[#FF8500] transition-colors"
             >
               Contact
